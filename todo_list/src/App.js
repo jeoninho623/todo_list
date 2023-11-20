@@ -59,12 +59,14 @@ function App() {
       contents: t.contents,
     };
     setTodo([...todo, newTodo]);
-    setDoneTodo(doneTodo.filter((dt) => t.id !== dt.id));
+    setDoneTodo(doneTodo.filter((dt) => t.id !== dt.id)); 
   };
  
   return (
     <div className='Outer'>
-      <h1>Todo List</h1>
+      <div>
+       <h1 className='top'>Todo List</h1>
+      </div>
       <div className='InputArea'>
         제목
         <input
@@ -83,7 +85,7 @@ function App() {
         </CustomButton>
       </div>
       <div className='Outer'>
-        <h2 className='title'>✅Todo</h2>
+        <h2 className='title'>Todo</h2>
         <div className='Scroll'>
           {todo.map((todo) => {
             return (
@@ -101,7 +103,7 @@ function App() {
             );
           })}
         </div>
-        <h2 className='title'>🐾Done</h2>
+        <h2 className='title'>Done</h2>
         <div className='Scroll'>
           {doneTodo.map((doneTodo) => {
             return (
