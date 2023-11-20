@@ -1,0 +1,25 @@
+{
+    "liveSassCompile.settings.autoprefix": [
+        {
+        // expanded 스타일의 css로 컴파일
+        "format":"expanded",
+        // 컴파일된 파일 확장자를 .css로 저장한다.
+        // (작업한 cscc 파일명 + .css로 저장 됨)    
+        "extensionName":".css",
+        // 컴파일된 파일 저장결호를 아래와 같이 설정
+        "savePath":"~/../"
+    },
+    {
+        // compressed 스타일의 css로 컴파일
+        "format":"expanded",
+        // 컴파일된 파일 확장자를 .css로 저장한다.
+        // (작업한 cscc 파일명 + .inho.css로 저장 됨)    
+        "extensionName":"inho.css",
+        // 컴파일된 파일 저장결호를 아래와 같이 설정
+        "savePath":"~/../"
+    }
+    ],
+    "liveSassCompile.settings.includeItems":[
+        "/css/scss/ *.scss"
+    ]
+}
